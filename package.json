@@ -1,0 +1,51 @@
+{
+  "name": "unocss-preset-violet",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.19.0",
+  "description": "Opinionated semantic tokens for UnoCSS theme.",
+  "author": "hellolin <i@hellolin.top>",
+  "license": "MIT",
+  "homepage": "https://github.com/VLTHellolin/unocss-preset-violet",
+  "repository": {
+    "url": "https://github.com/VLTHellolin/unocss-preset-violet"
+  },
+  "keywords": [
+    "unocss"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "build": "tsdown",
+    "lint": "eslint --cache --fix .",
+    "commitlint": "commitlint --edit",
+    "release": "bumpp"
+  },
+  "peerDependencies": {
+    "unocss": ">=66.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@hellolin-eslint/config": "^3.0.1",
+    "@radix-ui/colors": "^3.0.0",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.38.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "tsdown": "^0.15.10",
+    "typescript": "^5.9.3",
+    "unocss": "^66.5.4"
+  }
+}
