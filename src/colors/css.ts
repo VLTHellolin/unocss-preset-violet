@@ -17,7 +17,11 @@ const makeVars = (dark: boolean) =>
     ...Radix[
       `${color}${dark ? 'Dark' : ''}P3A` as keyof typeof Radix
     ],
-    [`${color}-fg`]: fgColor[color],
+    [`${color}-fg`]: (
+      typeof fgColor[color] === 'string'
+        ? fgColor[color]
+        : fgColor[color][dark ? 1 : 0]
+    ),
   })).join('\n');
 
 export const getCSS = () => {
