@@ -1,6 +1,7 @@
 export const palette = [
   'red',
   'purple',
+  'violet',
   'blue',
   'teal',
   'green',
@@ -12,6 +13,7 @@ export const palette = [
 export const fgColor: Record<typeof palette[number], string | [string, string]> = {
   red: 'white',
   purple: 'white',
+  violet: 'white',
   blue: 'white',
   teal: 'white',
   green: 'white',
