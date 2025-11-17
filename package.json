@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-violet",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "packageManager": "pnpm@10.19.0",
   "description": "Opinionated semantic tokens for UnoCSS theme.",
   "author": "hellolin <i@hellolin.top>",
